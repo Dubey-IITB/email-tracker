@@ -189,7 +189,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you encounter any issues or have questions:
 
-- 📧 **Email**: [Your Email]
+- 📧 **Email**: vishwatdubey2@gmail.com
 - 🐛 **Issues**: [GitHub Issues](https://github.com/Dubey-IITB/email-tracker/issues)
 - 📖 **Documentation**: Check this README and inline code comments
 

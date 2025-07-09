@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Email Tracker",
+  "version": "1.0",
+  "description": "Track email opens and interactions",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://mail.google.com/*",
+    "http://localhost:3000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["track.png"],
+    "matches": ["*://mail.google.com/*"]
+  }]
+} 
